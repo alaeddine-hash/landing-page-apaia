@@ -1,0 +1,188 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif; /* Robotic themed font */
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 15%;
+
+
+}
+
+.title {
+    font-size: 6rem; /* Larger font size for title */
+    color: #00ADEE; /* A high-tech cyan color */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    margin-bottom: 0.5em;
+    animation: fadeInUp 2s ease-out 0.5s both;
+}
+
+.description {
+    font-size: 2rem; /* Adjusted font size for description */
+    max-width: 800px; /* Maximum width for readability */
+    margin: 0 auto; /* Centering the paragraph */
+    color: #2b2b2b; /* A lighter color for contrast */
+    animation: fadeInUp 2s ease-out 0.75s both;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Neutral font for footer */
+    color: #00ADEE;
+
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    /* Style for elements to animate */
+    opacity: 0; /* Start with elements invisible */
+    animation-fill-mode: forwards; /* Keeps the element in the final state */
+}
+
+.logo-container {
+    text-align: center; /* Center align the logo */
+    padding: 10px; /* Add some padding around the logo */
+}
+
+#logo {
+    width: 200px; /* Adjust based on your logo's size */
+    height: auto; /* Maintain aspect ratio */
+    /* Additional styling as needed */
+}
+
+/* Add to your existing CSS */
+
+.logo-title-container {
+    display: flex; /* Display children elements in a row */
+    align-items: center; /* Center-align children vertically */
+    justify-content: center; /* Center-align children horizontally */
+    gap: 20px; /* Optional: adds some space between logo and title */
+}
+
+/* Update existing .title style if needed to remove bottom margin */
+.title {
+    margin-bottom: 0; /* Adjust or remove based on your layout needs */
+    /* Keep other styles unchanged */
+}
+
+/* You might need to adjust the .description style to ensure it's properly aligned */
+.description {
+    text-align: center; /* Ensure description text is centered */
+    width: 100%; /* Ensure it spans the full width */
+    /* Keep other styles unchanged */
+}
+
+
+/* Header and Navigation Styles */
+.site-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: inherit;
+    font-family: 'Orbitron', sans-serif;
+    background: rgba(0, 0, 0, 0.854);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background: rgba(0, 0, 0, 0);
+    padding-left: 0%;
+    padding-right: 1%;
+}
+
+/* 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #00ADEE; 
+} */
+
+/* Logo styling */
+#nav-logo-img {
+    height: 50px; /* Adjust based on your preference */
+    width: auto; /* Keeps the aspect ratio */
+}
+
+/* If the nav-logo is a link, style it to fit the theme */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    color: #00ADEE; /* Or any other styling */
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ADEE;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links a {
+        padding: 10px; /* Easier to tap on mobile */
+    }
+    #nav-logo-img {
+        margin-bottom: 20px; /* Space below the logo when stacked */
+    }
+}
+
+
+
