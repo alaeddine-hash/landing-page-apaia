@@ -53,3 +53,7 @@ footer p {
     font-size: 1em;
     opacity: 0.8;
 }
+
+
+************************************************************************
+scp -r C:\Users\alaed\OneDrive\Bureau\landing_page\images\logo_apaia root@51.195.150.25:/var/www/html/landing_page/images/

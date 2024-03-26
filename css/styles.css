@@ -87,7 +87,6 @@ body, html {
     justify-content: center;
     gap: 20px;
     font-size: calc(1vw + 0.5rem); /* Taille de police légèrement réduite pour économiser de l'espace */
-
 }
 
 .site-header {
@@ -106,14 +105,14 @@ body, html {
 
 .nav-links a {
     padding: 5px 10px; /* Espace interne réduit pour chaque lien */
-    font-size: calc(1vw + 0.5rem); /* Taille de police légèrement réduite pour économiser de l'espace */
+    font-size: calc(0.5vw + 0.5rem); /* Taille de police ajustée pour économiser de l'espace */
     color: #ddd;
     transition: color 0.3s ease;
 }
 
 #nav-logo-img {
     width: 15vw; /* Responsive logo size */
-    max-width: 100px; /* Ensuring it does not become too small */
+    max-width: 65px; /* Ensuring it does not become too small */
     height: auto;
 }
 
